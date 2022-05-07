@@ -1,26 +1,33 @@
 @import "@/assets/sass/_variables.scss";
 @import "@/assets/sass/_animations.scss";
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
+  box-sizing: border-box;
 }
 
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 100px;
   transition: all 100ms ease-in-out;
@@ -37,7 +44,7 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: $text;
 }
@@ -47,7 +54,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,11 +67,11 @@ body {
   opacity: 0;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: white;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
