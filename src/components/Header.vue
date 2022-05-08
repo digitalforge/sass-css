@@ -25,6 +25,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "../assets/sass/_header.scss";
-</style>
+<style lang="scss"></style>
