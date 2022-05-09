@@ -1,3 +1,11 @@
-@mixin style-link-text($col) {
-  color: $col;
+// @mixin style-link-text($col) {
+//   color: $col;
+// }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
