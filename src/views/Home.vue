@@ -1,15 +1,17 @@
 <template>
   <Header />
-  <GridTest />
+  <main>
+    <About />
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/Header"
-import GridTest from "@/components/GridTest"
+import About from "@/components/About"
 
 export default {
-  components: { Header, GridTest },
+  components: { Header, About },
   setup() {},
 }
 </script>
