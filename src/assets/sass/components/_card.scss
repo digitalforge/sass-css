@@ -3,7 +3,7 @@
   -webkit-perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     height: 100%;
@@ -39,6 +39,11 @@
         );
       }
       &-3 {
+        background: linear-gradient(
+          to top left,
+          $color-tertiary-dark,
+          $color-tertiary-light
+        );
       }
     }
   }
@@ -56,6 +61,9 @@
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
     &--1 {
       background-image: linear-gradient(
           to top left,
@@ -65,10 +73,20 @@
         url(assets/img/nat-5.jpg);
     }
     &--2 {
-      background-image: url(assets/img/nat-5.jpg);
+      background-image: linear-gradient(
+          to top left,
+          $color-primary,
+          $color-tertiary
+        ),
+        url(assets/img/nat-6.jpg);
     }
     &--3 {
-      background-image: url(assets/img/nat-5.jpg);
+      background-image: linear-gradient(
+          to top left,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(assets/img/nat-7.jpg);
     }
   }
 
@@ -81,5 +99,76 @@
     top: 12rem;
     right: 2rem;
     text-align: right;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 0.7rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-orange-light, 0.85),
+        rgba($color-orange-dark, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.85),
+        rgba($color-tertiary, 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: white;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
   }
 }
