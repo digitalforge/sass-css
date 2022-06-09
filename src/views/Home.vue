@@ -5,6 +5,7 @@
     <Features />
     <Tours />
     <Stories />
+    <Booking />
   </main>
 </template>
 
@@ -15,9 +16,10 @@ import About from "@/components/About"
 import Features from "@/components/Features"
 import Tours from "@/components/Tours"
 import Stories from "@/components/Stories"
+import Booking from "@/components/Booking"
 
 export default {
-  components: { Header, About, Features, Tours, Stories },
+  components: { Header, About, Features, Tours, Stories, Booking },
   setup() {},
 }
 </script>
