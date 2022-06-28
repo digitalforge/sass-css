@@ -1,0 +1,94 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba($color-black, 0.8);
+  z-index: 20000;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  // Target - because we have an ID of 'popup' this will trigger when the URL changes to having the target in it. This is because the element with the id of target becomes the target and we can use the psuedo class of :target
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-dark-grey;
+      position: absolute;
+      top: 1rem;
+      right: 2.5rem;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__content {
+    @include absCenter;
+    height: auto;
+    width: 75%;
+    background: $color-white;
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s 0.2s;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &__left {
+    width: 33.3333333%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__right {
+    width: 66.666666%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+    color: $text;
+
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+
+    -moz-column-gap: 4rem;
+    -webkit-column-gap: 4rem;
+    -ms-column-gap: 4rem;
+    column-gap: 4rem;
+
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+}

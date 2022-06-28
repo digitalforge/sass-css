@@ -29,7 +29,7 @@
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$297</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now</a>
+              <a href="#popup" class="btn btn--white">Book Now</a>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$497</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now</a>
+              <a href="#popup" class="btn btn--white">Book Now</a>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
                 <p class="card__price-only">Only</p>
                 <p class="card__price-value">$897</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now</a>
+              <a href="#popup" class="btn btn--white">Book Now</a>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@
     <Stories />
     <Booking />
     <Footer />
+    <Popup />
   </main>
 </template>
 
@@ -21,9 +22,20 @@ import Tours from "@/components/Tours"
 import Stories from "@/components/Stories"
 import Booking from "@/components/Booking"
 import Footer from "@/components/Footer"
+import Popup from "@/components/Popup"
 
 export default {
-  components: { Nav, Header, About, Features, Tours, Stories, Booking, Footer },
+  components: {
+    Nav,
+    Header,
+    About,
+    Features,
+    Tours,
+    Stories,
+    Booking,
+    Footer,
+    Popup,
+  },
   setup() {},
 }
 </script>
