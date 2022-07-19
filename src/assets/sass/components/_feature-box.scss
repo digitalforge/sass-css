@@ -10,6 +10,10 @@
   transition: all 400ms;
   cursor: pointer;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
